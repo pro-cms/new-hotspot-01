@@ -7,17 +7,17 @@
     <meta http-equiv="refresh" content="2; url=$(link-redirect)">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="-1">
-    <title>Internet hotspot - Redirect</title>
+    <title> Momo Internet - Redirect</title>
     <link rel="stylesheet" href="css/style.css">
     <script>
         function startClock() {
-            $(if popup == 'true')
+            $(
+                if popup == 'true')
             open('$(link-status)', 'hotspot_status', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=290,height=200');
-        $(endif)
-        location.href = unescape('$(link-redirect-esc)');
+            $(endif)
+            location.href = unescape('$(link-redirect-esc)');
         }
-
-    </script> 
+    </script>
 </head>
 
 <body onLoad="startClock()">
@@ -29,18 +29,17 @@
             </div>
         </div>
     </div>
-<script src="conf.js"></script>    
-<script type="text/javascript">
-//set theme
+    <script src="conf.js"></script>
+    <script type="text/javascript">
+        //set theme
 
-var bodyclass = document.getElementsByTagName("body")[0];
-if (config["theme"] == "dark"){
-    bodyclass.classList.add("dark");
-}else if (config["theme"] == "lite"){
-    bodyclass.classList.add("lite");
-}
-
-</script>    
+        var bodyclass = document.getElementsByTagName("body")[0];
+        if (config["theme"] == "dark") {
+            bodyclass.classList.add("dark");
+        } else if (config["theme"] == "lite") {
+            bodyclass.classList.add("lite");
+        }
+    </script>
 </body>
 
 </html>
