@@ -12,47 +12,47 @@
 # It should never happen. If it will, error page will be shown
 # displaying this error message (error-orig will describe what has happened)
 
-internal-error = hitilafu ya ndani ($(error-orig))
+internal-error = error internal ($(error-orig))
 
 # config-error
 # Should never happen if hotspot is configured properly.
 
-config-error = hitilafu ya usanidi ($(error-orig))
+config-error = error konfigurasi ($(error-orig))
 
 # not-logged-in
 # Will happen, if status or logout page is requested by user,
 # which actually is not logged in
 
-not-logged-in = Hujasajiliwa (ip $(ip))
+not-logged-in = Anda tidak masuk (ip $(ip))
 
 # ippool-empty
 # IP address for user is to be assigned from ip pool, but there are no more
 # addresses in that pool
 
-ippool-empty = Haiwezi kupeana anwani ya IP - hakuna anwani zaidi za bure kutoka kwenye hifadhi ya IP
+ippool-empty = cannot assign ip address - no more free addresses from pool
 
 # shutting-down
 # When shutdown is executed, new clients are not accepted
 
-shutting-down = Huduma ya hotspot inazimwa
+shutting-down = layanan hotspot tutup
 
 # user-session-limit
 # If user profile has limit of shared-users, then this error will be shown
 # after reaching this limit
 
-user-session-limit = Kikao zaidi hakiruhusiwi kwa mtumiaji $(username)
+user-session-limit = kode voucher/user sedang aktif $(username)
 
 # license-session-limit
 # Depending on licence number of active hotspot clients is limited to
 # one or another amount. If this limit is reached, following error is displayed.
 
-license-session-limit = Kikomo cha vikao kimefikiwa ($(error-orig))
+license-session-limit = durasi voucher Anda sudah habis ($(error-orig))
 
 # wrong-mac-username
 # If username looks like MAC address (12:34:56:78:9a:bc), but is not
 # a MAC address of this client, login is rejected
 
-wrong-mac-username = Jina la mtumiaji si sahihi ($(username)): Anwani hii ya MAC si yako
+wrong-mac-username = kode voucher/user tidak sesuai ($(username)): MAC address ini bukan milik Anda
 
 # chap-missing
 # If http-chap login method is used, but hotspot program does not receive
@@ -65,38 +65,38 @@ wrong-mac-username = Jina la mtumiaji si sahihi ($(username)): Anwani hii ya MAC
 # If JavaScript is enabled and login.html page is valid,
 # then retrying to login usually fixes this problem.
 
-chap-missing = Kivinjari cha wavuti hakikutuma jibu la changamoto (jaribu tena, wezesha JavaScript)
+chap-missing = gagal login! enable HTTP PAP di hotspot - server profile.
 
 # invalid-username
 # Most general case of invalid username or password. If RADIUS server
 # has sent an error string with Access-Reject message, then it will
 # override this setting.
 
-invalid-username = Nambari ya vocha sio sahihi
+invalid-username = kode voucher/user & password tidak sesuai, masukkan kembali dengan benar.
 
 # invalid-mac
 # Local users (on hotspot server) can be bound to some MAC address. If login
 # from different MAC is tried, this error message will be shown.
 
-invalid-mac = Mtumiaji $(username) haruhusiwi kuingia kutoka kwa anwani hii ya MAC
+invalid-mac = kode voucher/user $(username) tidak dapat diaktifkan dari MAC address ini
 
 # uptime-limit, traffic-limit
 # For local hotspot users in case if limits are reached
 
-uptime-limit = Mtumiaji $(username) amefikia kikomo cha muda wa matumizi
-traffic-limit = Mtumiaji $(username) amefikia kikomo cha trafiki
+uptime-limit = kode voucher/user $(username) sudah mencapai batas waktu
+traffic-limit = kode voucher/user $(username) sudah mencapai batas kuota
 
 # radius-timeout
 # User is authenticated by RADIUS server, but no response is received from it,
 # following error will be shown.
 
-radius-timeout = Seva ya RADIUS haijibu
+radius-timeout = RADIUS server tidak merespon
 
 # auth-in-progress
 # Authorization in progress. Client already has issued an authorization request
 # which is not yet complete.
 
-auth-in-progress = Nambari ya voucha imekwisha tumika
+auth-in-progress = sudah diaktifkan, coba lagi nanti
 
 # radius-reply
 # Radius server returned some custom error message

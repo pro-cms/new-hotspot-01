@@ -34,13 +34,12 @@
         <div class="main">
             <div class="wrap animated fadeIn">
                 <center><img src="img/logo.png" width="200"></center>
-                <br> <br>
-                <br> <br>
 
-                <form autocomplete="off" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+
+                <form style="background-color: rgba(255, 255, 255, 0.548); padding: 10px; margin-top: 100px;" autocomplete="off" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
                     <input type="hidden" name="dst" value="$(link-orig)" />
                     <input type="hidden" name="popup" value="true" />
-                    <div class="info" id="infologin"></div>
+                    <div class="info" style="color: black!important;  " id="infologin"></div>
                     $(if error)
                     <div class="notice" id="err">$(error)</div>
                     $(endif)
@@ -48,7 +47,7 @@
                     </p>
                     <label>
                         <img id="ico1" class="ico" src="img/user.svg" alt="#" />
-                        <input name="username" type="text" value="$(username)" placeholder="Username" />
+                        <input style="border: 2px;" name="username" type="text" value="$(username)" placeholder="Username" />
                     </label>
 
                     <label>
@@ -56,12 +55,12 @@
                         <input name="password" type="hidden" placeholder="Password" />
                     </label>
 
-                    <input type="submit" value="Connect" />
+                    <input type="submit" value="INGIA ONLINE" />
 
                 </form>
                 <hr>
                 <center>
-                    <a href="https://momobando.com"><b>Nunua vocha kwa momobando.com</b></a> <br>
+                    <a href="https://momobando.com"><b> 👉 Nunua vocha kwa momobando.com</b></a> <br>
                     <div style="color: white;">
                         Piga <a href="tel:+255752771650"><b> 0752771650</b> </a> Au <a href="tel:+255800110787"><b>  0800110787</b></a>
 

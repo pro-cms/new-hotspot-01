@@ -99,8 +99,8 @@ h1 {
 }
 
 .wrap {
-    margin: auto;
-    padding: 40px;
+    margin-top: 40%;
+    padding: 10px;
     -webkit-transition: width .3s ease-in-out;
     transition: width .3s ease-in-out
 }
@@ -189,7 +189,7 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
-    background: #ac0150;
+    background: #000000;
     color: #fff;
     border: 0;
     cursor: pointer;
@@ -203,11 +203,11 @@ input[type=submit] {
 
 input[type=submit]:focus,
 input[type=submit]:hover {
-    background: #ac0150
+    background: #000000
 }
 
 input[type=submit] {
-    background: #ac0150;
+    background: #000000;
     color: #fff;
     border: 0;
     cursor: pointer;
@@ -221,7 +221,7 @@ input[type=submit] {
 
 input[type=submit]:focus,
 input[type=submit]:hover {
-    background: #ac0150
+    background: #000000
 }
 
 table {
